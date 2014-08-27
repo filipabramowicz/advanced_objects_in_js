@@ -18,6 +18,9 @@ function Product(prefix) {
 /**
  * @param {string} newType
  */
+// This type of definition causes that get propertyname () works on object literals
+// This is OK but using object literals makes it harder to chain prototypes to 
+// get inheritance
 Product.prototype = {
     /**
      * @return {string}
